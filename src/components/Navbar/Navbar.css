@@ -1,0 +1,146 @@
+body {
+   margin: 0;
+   padding: 0;
+   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+   background-color: black;
+   color: white;
+}
+
+::-webkit-scrollbar {
+   display: none;
+}
+/* html {
+   scroll-behavior: smooth;
+} */
+
+/******************************************/
+
+.nav {
+   background-color: transparent;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   height: 70px;
+   z-index: 2;
+   position: fixed;
+   top: 0;
+   width: 100%;
+   color: white;
+   transition: 0.3s ease-in-out;
+}
+
+.actives {
+   background-color: black;
+   box-shadow: 0 5px 10px 0 rgba(255, 0, 0, 0.241);
+}
+
+.logo {
+   font-size: 30px;
+   font-weight: 700;
+   margin-left: 40px;
+}
+
+.right ul {
+   display: flex;
+   list-style: none;
+   margin-right: 40px;
+}
+.right ul li a {
+   margin: 0 20px;
+   text-decoration: none;
+   color: white;
+   cursor: pointer;
+   font-size: 20px;
+}
+.right ul li a:hover {
+   border-bottom: 2px solid red;
+}
+/*************************/
+.right ul a {
+   margin: 0 20px;
+   text-decoration: none;
+   color: white;
+   cursor: pointer;
+   font-size: 20px;
+}
+.right ul a:hover {
+   border-bottom: 1px solid red;
+}
+/**************************/
+.right ul button {
+   font-size: 30px;
+   background-color: transparent;
+   color: white;
+   border: none;
+   display: none;
+   margin-right: -30px;
+}
+
+.responsive_nav {
+   background-color: black;
+   /* background-color: rgb(0, 0, 32); */
+   height: 100vh;
+   z-index: 2;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   transition: 0.3s ease-in-out;
+   position: fixed;
+   width: 100%;
+}
+
+.responsive_links {
+   display: flex;
+   flex-direction: column;
+}
+
+.responsive_links li {
+   list-style: none;
+   margin-bottom: 15px;
+}
+.responsive_links li a {
+   text-decoration: none;
+   color: red;
+   /* color: white; */
+   cursor: pointer;
+   font-size: 40px;
+}
+/*******************/
+.responsive_links a {
+   list-style: none;
+   margin-bottom: 15px;
+}
+.responsive_links a {
+   text-decoration: none;
+   color: red;
+   /* color: white; */
+   cursor: pointer;
+   font-size: 40px;
+}
+/*******************/
+
+.responsive_links button {
+   position: absolute;
+   top: 3%;
+   right: 11%;
+   font-size: 40px;
+   background-color: transparent;
+   color: white;
+   border: none;
+}
+
+@media only screen and (max-width: 400px) {
+   .right ul li {
+      display: none;
+   }
+   .right ul a {
+      display: none;
+   }
+   .right ul button {
+      display: inline;
+   }
+   .logo {
+      margin-left: 10px;
+   }
+}

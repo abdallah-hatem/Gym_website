@@ -1,0 +1,65 @@
+.header img {
+   width: 100%;
+   height: 100vh;
+}
+.header {
+   position: relative;
+}
+
+.header-text {
+   position: absolute;
+   top: 15%;
+   right: 22%;
+   color: white;
+   font-size: 45px;
+   text-align: center;
+}
+.header-text span {
+   color: red;
+}
+.header-text h2 {
+   margin-bottom: -60px;
+}
+.header-details {
+   font-size: 25px;
+   margin-top: -20px;
+}
+.header-text button {
+   font-size: 30px;
+   width: 20%;
+   height: 7vh;
+   border-radius: 5px;
+   border: 1px solid black;
+   background-color: red;
+   color: white;
+   cursor: pointer;
+   transition: 0.2s ease-in-out;
+}
+.header-text button:hover {
+   background-color: transparent;
+   border: 2px solid red;
+}
+
+@media only screen and (max-width: 400px) {
+   .header-text {
+      font-size: 30px;
+      right: 0;
+      top: 30%; 
+   }
+   .header-details {
+      font-size: 20px;
+   }
+   .header-text h1 {
+      font-size: 40px;
+      
+   }
+
+   .header-text h2 {
+      margin-bottom: 20px;
+   }
+   .header-text button{
+       font-size: 20px;
+       width: 30%;
+   }
+   
+}

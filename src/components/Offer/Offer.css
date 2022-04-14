@@ -1,0 +1,54 @@
+.offer-container img {
+   width: 100%;
+   height: calc(100vh - 70px);
+}
+.offer-container {
+   position: relative;
+}
+.offer-text {
+   position: absolute;
+   top: 15%;
+   right: 22%;
+   color: white;
+   font-size: 45px;
+   text-align: center;
+   width: 60%;
+}
+.offer-text span {
+   color: red;
+}
+
+.offer-text p {
+   font-size: 22px;
+}
+.offer-text button {
+   font-size: 30px;
+   width: 20%;
+   height: 7vh;
+   border-radius: 5px;
+   border: 1px solid black;
+   background-color: red;
+   color: white;
+   cursor: pointer;
+   transition: 0.2s ease-in-out;
+}
+.offer-text button:hover {
+   background-color: transparent;
+   border: 2px solid red;
+}
+
+@media only screen and (max-width: 400px) {
+   .offer-text {
+      font-size: 20px;
+      width: 96%;
+      right: 1%;
+      top: 30%;
+   }
+   .offer-text button {
+      font-size: 20px;
+      width: 50%;
+   }
+   .offer-container img {
+      height: 85vh;
+   }
+}
